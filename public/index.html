@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../public/curriculo.css">
+    <link rel="stylesheet" href="curriculo.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="../public/curriculo.js">
+    <script src="curriculo.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <title>Currículo Izabella</title>
@@ -22,12 +21,17 @@
             <div class="infos">
                 <h1 class="titulo"> <b> Izabella Almeida </b>
                 </h1>
-                <p class="cabeçalho">Nascimento: 18/08/2003 - 18 anos <br>
-                    São Paulo, São Paulo, Brasil - 05510-021 <br>
-                    izabella.faria.ismart@gmail.com.br <br>
-                    (31) 9 9394-3491 <br>
-                    Linkedin: <a href="https://www.linkedin.com/in/izabellaalmeida/" target="_blank"> Izabella
-                        Almeida</a> <br>
+                <p class="cabeçalho">
+                <ul>
+                    <li id="nascimento"></li>
+                    <li> São Paulo, São Paulo, Brasil - 05510-021</li>
+                    <li id="telefone"> </li>
+                    <li id="email"> </li>
+                    <li> Linkedin: <a href="https://www.linkedin.com/in/izabellaalmeida/" target="_blank"> Izabella
+                        Almeida</a></li>
+                </ul>
+
+                <br>
                 </p>
             </div>
             <img class="foto-perfil" src="izabella.jpeg" alt="foto de perfil">
@@ -61,8 +65,6 @@
         </ul>
         </p>
         <hr>
-
-
 
         <h1 class="subtitulo"> <b>Competências: </b>
         </h1>
@@ -161,8 +163,7 @@
         <hr>
     </main>
 
-    <script src="../public/curriculo.js"></script>
-    <div >
+    <div>
         <!-- <input type="button" class="botao" onclick="esconde()" > -->
         <button class="botao" id="mostra" onclick="adiciona()">Clique aqui</button>
         <button class="botao" id="esconder" onclick="esconde()">Esconda a frase</button>
@@ -170,6 +171,12 @@
     </div>
     <p id="frase"></p>
     <hr>
+    <div>
+        <h1 class="subtitulo">Gostou do meu currículo? Insira uma indicação de empresa:</h1>
+        <input class="corpo_do_texto" type="text" id="indicação" placeholder="Insira uma indicação de empresa."
+            style="border: 0.3; border-radius: 10rem; width: 300px; ">
+        <button onclick="envia()" class="">Enviar</button>
+    </div>
 
     <footer>
     </footer>
